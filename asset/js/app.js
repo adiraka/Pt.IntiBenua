@@ -85,4 +85,33 @@ $(document).ready(function(){
 		responsive: true,
 		autoWidth: true,
 	});
+
+	$('.tabel-tbt2').dataTable({
+		dom: 'Bfttip',
+		buttons: [
+			{
+				extend: 'pdfHtml5',
+				filename: 'Laporan Tema TBT PT. IBP',
+				title: 'Laporan Tema TBT PT. IBP',
+				text: 'Export PDF',
+				header: true,
+				message: 'Berikut adalah laporan Tema TBT dari karyawan lapangan PT. Inti Benua Perkasatama (MUSIMMAS GROUP) :',
+				pageSize: 'A4',
+				exportOptions: {
+					columns: [0,1,2,3],
+				}
+			},
+			{
+				extend: 'excel',
+				text: 'Export Excel',
+				title: 'Laporan Tema TBT PT. IBP',
+				filename: 'Laporan Tema TBT PT. IBP',
+				exportOptions: {
+					columns: [0,1,2,3],
+				}
+			},
+		],
+		responsive: true,
+		autoWidth: true,
+	});
 });

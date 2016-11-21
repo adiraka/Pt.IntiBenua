@@ -4,8 +4,8 @@
 		header("location:../../index.php");
 	}
 
-	if ($_SESSION["hakakses"] == 2) {
-		echo '<script>window.location.replace("../supervisor/index.php");</script>';
+	if ($_SESSION["hakakses"] == 1) {
+		echo '<script>window.location.replace("../webmaster/index.php");</script>';
 	} else if ($_SESSION["hakakses"] == 3) {
 		echo '<script>window.location.replace("../karyawan/index.php");</script>';
 	}
@@ -37,8 +37,8 @@
 			<div class="collapse navbar-collapse" id="myNavbar">
 				<ul class="nav navbar-nav navbar-right">
 					<li><a href="index.php"><span class="glyphicon glyphicon-home"></span></a></li>
-					<li><a href="user-akun.php">USER AKUN</a></li>
 					<li><a href="profil.php">PROFIL</a></li>
+					<li><a href="ubah-password.php">UBAH PASSWORD</a></li>
 					<li><a href="lihat-tema-tbt.php">TEMA TBT</a></li>
 					<li><a href="../../incl/logout.php"><span class="glyphicon glyphicon-log-out"></span></a></li>
 				</ul>
